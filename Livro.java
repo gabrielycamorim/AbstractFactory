@@ -2,7 +2,7 @@ public class FabricaAbstrataLivro {
 
     public static void main(String[] args) {
 
-        FabricaAbstrataLivro fabrica1 = new FabricaConcreta1EditoraIntrínseca();
+        FabricaAbstrataLivro fabrica1 = new FabricaConcreta1EditoraIntrÃ­nseca();
         Cliente cliente1 = new Cliente(fabrica1);
         cliente1.executar();
 
@@ -39,7 +39,7 @@ interface ProdutoAbstratoB {
     void interagir(ProdutoAbstratoA a);
 }
 
-class FabricaConcreta1EditoraIntrínseca implements FabricaAbstrataLivro {
+class FabricaConcreta1EditoraIntrinseca implements FabricaAbstrataLivro {
 
     @Override
     public ProdutoAbstratoA criarProdutoACidadesDePapel() {
